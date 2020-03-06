@@ -1,4 +1,4 @@
 class Specialist < ActiveRecord::Base
-    has_many :employees
-    
+    has_many :employeespecialists
+    has_many :employees, through: :employeespecialist
 end
