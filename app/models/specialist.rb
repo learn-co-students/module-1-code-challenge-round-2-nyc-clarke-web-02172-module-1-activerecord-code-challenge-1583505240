@@ -5,10 +5,8 @@ class Specialist < ActiveRecord::Base
 end 
 
 
-# An Employee:
 
 
 
 
 
-# Returns the employee with the highest number of calls to Specialists

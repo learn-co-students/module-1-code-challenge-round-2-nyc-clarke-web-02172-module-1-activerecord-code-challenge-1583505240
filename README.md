@@ -107,17 +107,22 @@ _\*\*DO A GIT ADD AND COMMIT WITH MESSAGE "deliverable 2" AND THEN PROCEED TO TH
   Which table(s) have foreign key(s)?
 
     Answer Here:
+    All the tables that belong to another model have foreign keys. 
+    Join has the foreign keys for manager & employee
+    SecondJoin has the foriegn key for specialist & employee
 
   For this domain, which methods did ActiveRecord create for us and which did we have to create ourselves?
-
     Answer Here:
+  All the crud methods that we use for creating tables, etc. 
+  Also the reason why we are able to do Specialist.employees is through active record as well as we establish our relationships.
 
   How do you know when you need to use a join table?
 
     Answer Here:
+    When you have a many to many relationship you ALWAYS need a join table
 
   What is/are the join table(s) in this application?
 
     Answer Here:
-
+    SecondJoin, Join
 _\*\*DO A GIT ADD AND COMMIT WITH MESSAGE "deliverable 3" \*\*_
