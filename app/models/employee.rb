@@ -1,4 +1,9 @@
 class Employee < ActiveRecord::Base
-    belongs_to :manager
+   has_many :join
+   has_many :managers, through: :join
     belongs_to :department
 end
+
+
+
+
