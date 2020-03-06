@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_06_150431) do
+ActiveRecord::Schema.define(version: 2020_03_06_152246) do
 
   create_table "departments", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_03_06_150431) do
   create_table "employees", force: :cascade do |t|
     t.string "name"
     t.integer "department_id"
+    t.integer "most_calls"
   end
 
   create_table "joins", force: :cascade do |t|
@@ -27,6 +28,15 @@ ActiveRecord::Schema.define(version: 2020_03_06_150431) do
   end
 
   create_table "managers", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "second_joins", force: :cascade do |t|
+    t.integer "specialist_id"
+    t.integer "employee_id"
+  end
+
+  create_table "specialists", force: :cascade do |t|
     t.string "name"
   end
 
